@@ -1,2 +1,3 @@
-# Catch Me, If You Can!
-Build a turn-based board game in JavaScript
+# Zombie vs Human!
+Build a turn-based board game in JavaScript.
+Doc is in porgress...
