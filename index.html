@@ -1,20 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <link rel="icon" href="images/logo1.png" type="image/x-icon" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css" >
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Zombie vs Human!</title>
   </head>
   <body>
     <!--Game Header-->
     <header>
       <div>
-        <img src="images/logo3.png" class="game-logo" alt="game logo">
+        <img src="images/logo3.png" class="game-logo" alt="game logo" />
         <h1 id="title">Zombie vs Human</h1>
       </div>
     </header>
@@ -28,37 +36,55 @@
           <h2>Welcome to Zombie vs Human</h2>
           <p>GAME RULES:</p>
           <ul>
-            <li>Every single player can move up to 3 steps horizontally or vertically.</li>
-            <li>Each player start the game with 100% health and initial weapon.</li>
-            <li>During the game to collect weapons to become stronger, so try to collect strong weapon.</li>
+            <li>
+              Every single player can move up to 3 steps horizontally or
+              vertically.
+            </li>
+            <li>
+              Each player start the game with 100% health and initial weapon.
+            </li>
+            <li>
+              During the game to collect weapons to become stronger, so try to
+              collect strong weapon.
+            </li>
           </ul>
           <div class="game-weapons">
-              <figure>
-                <img src="images/weapon1.png" alt="">
-                <caption>15</caption>
-              </figure>
+            <figure>
+              <img src="images/weapon1.png" alt="" />
+              <caption>
+                15
+              </caption>
+            </figure>
 
-              <figure>
-                <img src="images/weapon8.png" alt="">
-                <caption>30</caption>
-              </figure>
+            <figure>
+              <img src="images/weapon8.png" alt="" />
+              <caption>
+                30
+              </caption>
+            </figure>
 
-              <figure>
-                <img src="images/weapon6.png" alt="">
-                <caption>45</caption>
-              </figure>
+            <figure>
+              <img src="images/weapon6.png" alt="" />
+              <caption>
+                45
+              </caption>
+            </figure>
 
-              <figure>
-                <img src="images/weapon7.png" alt="">
-                <caption>60</caption>
-              </figure>
-           </div>
-           <ul>
-            <li>When the two players are close to each other the fight start.</li>
-            <li>The winner is the last man standing. </li>
-           </ul>
-           <p>Enjoy the game :)</p>
-           <button id="start" onclick="">Play now!</button>
+            <figure>
+              <img src="images/weapon7.png" alt="" />
+              <caption>
+                60
+              </caption>
+            </figure>
+          </div>
+          <ul>
+            <li>
+              When the two players are close to each other the fight start.
+            </li>
+            <li>The winner is the last man standing.</li>
+          </ul>
+          <p>Enjoy the game :)</p>
+          <button id="start" onclick="">Play now!</button>
         </div>
       </section>
       <!--Start of Landding page Intro to game rules-->
@@ -68,7 +94,7 @@
         <div class="palyer">
           <h2 class="name-1"></h2>
           <div class="player-img">
-            <img src="images/human2.png" alt="human">
+            <img src="images/human2.png" alt="human" />
           </div>
         </div>
         <div class="weapon">
@@ -88,17 +114,46 @@
       <div id="board-game"></div>
       <!-- end The board -->
 
-
+      <!--Start of zombie box area-->
+      <div class="player-box" id="palyer-2">
+        <div class="palyer">
+          <h2 class="name-2"></h2>
+          <div class="player-img">
+            <img src="images/zombie3.png" alt="zombie" />
+          </div>
+        </div>
+        <div class="weapon">
+          <h2>Health: <span id="life-2"></span></h2>
+          <div class="weapons-second"></div>
+          <h3>Weapons: <span class="weapons-2"></span></h3>
+          <div class="turn-2"></div>
+          <div class="buttons">
+            <button class="btn-attack-2">Attack</button>
+            <button class="btn-defend-2">Defend</button>
+          </div>
+        </div>
+      </div>
+      <!--End of zombie box area-->
     </div>
     <!--Game components container-->
-
-
 
     <!--Add JS file and libraries-->
     <script src="js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
