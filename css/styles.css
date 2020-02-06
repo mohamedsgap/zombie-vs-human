@@ -5,7 +5,7 @@ html, body {
     padding: 0;
 }
 body {
-    background-image: url(../images/background4.jpg);
+    background-image: url(../images/background2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -25,4 +25,52 @@ header .game-logo {
     font-size: 4em;
     text-align: center;
     color: white;
+}
+
+ul li {
+    list-style: circle;
+}
+.game-weapons {
+    display: inline-flex;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+figure img {
+    max-width: 5rem;
+    max-height: 5rem;
+}
+#start {
+    width: 200px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    margin-left: 22rem;
+}
+.game-intro {
+    
+    width: 90%;
+    height: 66%;
+    background-color: black;
+    color: white;
+    opacity: 0.9;
+    margin: 33px;
+    padding: 33px;
+}
+.game-rules {
+    font-size: 1.5rem;
+    letter-spacing: 0.1.5rem;
+    word-spacing: 0.1.5rem;
+}
+
+.game-rules h2 {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
 }
