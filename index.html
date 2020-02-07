@@ -84,76 +84,62 @@
             <li>The winner is the last man standing.</li>
           </ul>
           <p>Enjoy the game :)</p>
-          <button id="start" onclick="">Play now!</button>
+          <button id="start" onclick="startGame(this)">Play now!</button>
         </div>
       </section>
       <!--Start of Landding page Intro to game rules-->
+      <div class="d-flex justify-content-around">
+        <!--Start of human box area-->
+        <div class="player-box" id="palyer-1">
+          <div class="palyer">
+            <h2 class="name-1"></h2>
+            <div class="player-img">
+              <img src="images/human2.png" id="human-img" alt="human" />
+            </div>
+          </div>
+          <div class="weapon">
+            <h2>Health: <span id="life-1"></span></h2>
+            <div class="weps-1"></div>
+            <h3>Weapons: <span class="weapons-1"></span></h3>
+            <div class="turn-1"></div>
+            <div class="buttons">
+              <button class="btn-attack-1">Attack</button>
+              <button class="btn-defend-1">Defend</button>
+            </div>
+          </div>
+        </div>
+        <!--End of human box area-->
 
-      <!--Start of human box area-->
-      <div class="player-box" id="palyer-1">
-        <div class="palyer">
-          <h2 class="name-1"></h2>
-          <div class="player-img">
-            <img src="images/human2.png" alt="human" />
+        <!-- The board game live here-->
+        <div id="board-game"></div>
+        <!-- end The board -->
+
+        <!--Start of zombie box area-->
+        <div class="player-box" id="palyer-2">
+          <div class="palyer">
+            <h2 class="name-2"></h2>
+            <div class="player-img">
+              <img src="images/zombie3.png" id="zombie-img" alt="zombie" />
+            </div>
+          </div>
+          <div class="weapon">
+            <h2>Health: <span id="life-2"></span></h2>
+            <div class="weps-2"></div>
+            <h3>Weapons: <span class="weapons-2"></span></h3>
+            <div class="turn-2"></div>
+            <div class="buttons">
+              <button class="btn-attack-2">Attack</button>
+              <button class="btn-defend-2">Defend</button>
+            </div>
           </div>
         </div>
-        <div class="weapon">
-          <h2>Health: <span id="life-1"></span></h2>
-          <div class="weapons-first"></div>
-          <h3>Weapons: <span class="weapons-1"></span></h3>
-          <div class="turn-1"></div>
-          <div class="buttons">
-            <button class="btn-attack-1">Attack</button>
-            <button class="btn-defend-1">Defend</button>
-          </div>
-        </div>
+        <!--End of zombie box area-->
       </div>
-      <!--End of human box area-->
-
-      <!-- The board game live here-->
-      <div id="board-game"></div>
-      <!-- end The board -->
-
-      <!--Start of zombie box area-->
-      <div class="player-box" id="palyer-2">
-        <div class="palyer">
-          <h2 class="name-2"></h2>
-          <div class="player-img">
-            <img src="images/zombie3.png" alt="zombie" />
-          </div>
-        </div>
-        <div class="weapon">
-          <h2>Health: <span id="life-2"></span></h2>
-          <div class="weapons-second"></div>
-          <h3>Weapons: <span class="weapons-2"></span></h3>
-          <div class="turn-2"></div>
-          <div class="buttons">
-            <button class="btn-attack-2">Attack</button>
-            <button class="btn-defend-2">Defend</button>
-          </div>
-        </div>
-      </div>
-      <!--End of zombie box area-->
     </div>
     <!--Game components container-->
 
-    <!--Add JS file and libraries-->
-    <script src="js/app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+    <!--Add JS file and  jQuery library-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
