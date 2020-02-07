@@ -12,7 +12,8 @@ body {
 header {
     background-color: black;
     border: solid 2px;
-    border-radius: 10px;
+    border-radius: 15px;
+    opacity: 0.9;
 }
 header .game-logo {
     margin-left: 10px;
@@ -58,6 +59,7 @@ figure img {
     opacity: 0.9;
     margin: 33px;
     padding: 33px;
+    border-radius: 25px;
 }
 .game-rules {
     font-size: 1.5rem;
@@ -69,8 +71,128 @@ figure img {
     margin-top: 3rem;
     text-align: center;
 }
-
+/*
 .container {
     display: flex;
     justify-content: space-between;
 }
+*/
+.player-box {   
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+    flex-direction: column;
+    min-height: 600px;
+    min-width: 250px;
+    max-width: 300px;
+    margin-right: 55px;
+    margin-left: 55px;
+    border: solid 2px grey;
+    border-radius: 25px;
+    margin-top: 35px;
+}
+
+.player-box .player, .player-box .weapon {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.player-box .player-box {
+    margin: 0 auto;
+}
+
+
+.weps-1 img, .weps-2 img, #player-1, #player-2 {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+#player-1 .player, #player-2 .player {
+   
+    font-size: 20px;
+    text-align: center;
+}
+.player-img , #zombie-img, #human-img {
+    width: 250px;
+    height: 250px;
+}
+.name-1 , .name-2 {
+    margin-top: 30px;
+}
+
+#board-game {
+    min-width: 500px;
+    min-height: 500px;
+    max-width:  500px;
+    max-height:  500px;
+    border-radius: 5px;
+    display: border-box;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 100px;
+    position: relative;
+}
+
+
+#board-game .box {
+    border-radius: 4px;
+    border:solid 0.5px grey;
+    background-color: aliceblue;
+    background-image: url(../images/grass-ground.png);
+    min-width: 50px;
+    min-height: 50px;
+    float: left;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+#board-game .obstacle {
+    background-image: url('../images/Rock.png');
+    background-size: 50px 50px;
+
+}
+
+
+#board-game .weapon.wp-2, .wp-2 {
+    background-image: url('../images/weapon1.png');
+    background-size: 50px 50px;
+
+}
+
+#board-game .weapon.wp-3, .wp-3 {
+    background-image: url('../images/weapon6.png');
+    background-size: 50px 50px;
+
+}
+
+#board-game .weapon.wp-4, .wp-4{
+    background-image: url('../images/weapon7.png');
+    background-size: 50px 50px;
+
+}
+
+#board-game .weapon.wp-5, .wp-5 {
+    background-image: url('../images/weapon8.png');
+    background-size: 50px 50px;
+}
+
+#board-game .weapon.wp-1, .wp-1 {
+    background-image: url('../images/weapon1.png');
+    background-size: 48px 48px;
+}
+
+#board-game .player1 {
+    background-image: url('../images/human2.png') !important;
+    background-size: 50px 50px;
+    background-position: no-repeat;
+}
+
+#board-game .player2 {
+    background-image: url('../images/zombie3.png') !important;
+    background-size: 50px 50px;
+}
+
