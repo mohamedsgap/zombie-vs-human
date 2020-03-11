@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="images/logo1.png" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Zombie vs Human!</title>
+  </head>
+  <body>
+    <!--Game Header-->
+    <header>
+      <div>
+        <img src="images/logo3.png" class="game-logo" alt="game logo" />
+        <h1 id="title">Zombie vs Human</h1>
+      </div>
+    </header>
+    <!--End of Game Header-->
+
+    <!--Game components container-->
+    <div class="container">
+      <div class="d-flex justify-content-around">
+        <!--Start of human box area-->
+        <div class="player-box active" id="player-1">
+          <div class="palyer">
+            <h2 class="name-1"></h2>
+            <div class="player-img">
+              <img src="images/human2.png" id="human-img" alt="human" />
+            </div>
+          </div>
+          <div class="weapon">
+            <h2>Health: <span id="life-1"></span></h2>
+            <div class="weps-1"></div>
+            <h3>Weapons: <span class="weapons-1"></span></h3>
+            <div class="turn-1"></div>
+            <div class="buttons">
+              <button class="btn-attack-1">Attack</button>
+              <button class="btn-defend-1">Defend</button>
+            </div>
+          </div>
+        </div>
+        <!--End of human box area-->
+
+        <!-- The board game lives here-->
+        <div id="board-game"></div>
+        <!-- End of game board -->
+
+        <!--Start of zombie box area-->
+        <div class="player-box" id="player-2">
+          <div class="palyer">
+            <h2 class="name-2"></h2>
+            <div class="player-img">
+              <img src="images/zombie3.png" id="zombie-img" alt="zombie" />
+            </div>
+          </div>
+          <div class="weapon">
+            <h2>Health: <span id="life-2"></span></h2>
+            <div class="weps-2"></div>
+            <h3>Weapons: <span class="weapons-2"></span></h3>
+            <div class="turn-2"></div>
+            <div class="buttons">
+              <button class="btn-attack-2">Attack</button>
+              <button class="btn-defend-2">Defend</button>
+            </div>
+          </div>
+        </div>
+        <!--End of zombie box area-->
+      </div>
+    </div>
+    <!--End of game components container-->
+    
+    <!-- Start of game over section area-->
+    <div id="gameOver">
+      <div class="gameOver-content">
+          <h2>THE GAME IS OVER!</h2>
+          <p>The winner is <span id="winner"></span>! 🎉🎊🎖️</p>
+          <p>No problem <span id='looser'></span> Play one more time.</p>
+          <h3>Thanks for playing!</h3>
+          <a class="btn" id="start-again" href="game.html">PLAY AGAIN!</a>
+      </div>
+    </div>
+    <!-- end of game over section area-->
+
+    <!--Add JS files and  jQuery library-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/myapp.js"></script>
+    <script type="text/javascript" src="js/board.js"></script>
+    <script type="text/javascript" src="js/weapons.js"></script>
+    <script type="text/javascript" src="js/players.js"></script>
+    <script type="text/javascript" src="js/combat.js"></script>
+  </body>
+</html>
