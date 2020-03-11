@@ -50,28 +50,28 @@
           </ul>
           <div class="game-weapons">
             <figure>
-              <img src="images/weapon1.png" alt="" />
+              <img src="images/weapon-1.png" alt="" />
               <caption>
                 15
               </caption>
             </figure>
 
             <figure>
-              <img src="images/weapon8.png" alt="" />
+              <img src="images/weapon-2.png" alt="" />
               <caption>
                 30
               </caption>
             </figure>
 
             <figure>
-              <img src="images/weapon6.png" alt="" />
+              <img src="images/weapon-3.png" alt="" />
               <caption>
                 45
               </caption>
             </figure>
 
             <figure>
-              <img src="images/weapon7.png" alt="" />
+              <img src="images/weapon-4.png" alt="" />
               <caption>
                 60
               </caption>
@@ -84,62 +84,9 @@
             <li>The winner is the last man standing.</li>
           </ul>
           <p>Enjoy the game :)</p>
-          <button id="start" onclick="startGame(this)">Play now!</button>
+          <a class="btn" id="start" href="game.html">PLAY NOW!</a>
         </div>
       </section>
-      <!--Start of Landding page Intro to game rules-->
-      <div class="d-flex justify-content-around">
-        <!--Start of human box area-->
-        <div class="player-box" id="palyer-1">
-          <div class="palyer">
-            <h2 class="name-1"></h2>
-            <div class="player-img">
-              <img src="images/human2.png" id="human-img" alt="human" />
-            </div>
-          </div>
-          <div class="weapon">
-            <h2>Health: <span id="life-1"></span></h2>
-            <div class="weps-1"></div>
-            <h3>Weapons: <span class="weapons-1"></span></h3>
-            <div class="turn-1"></div>
-            <div class="buttons">
-              <button class="btn-attack-1">Attack</button>
-              <button class="btn-defend-1">Defend</button>
-            </div>
-          </div>
-        </div>
-        <!--End of human box area-->
-
-        <!-- The board game live here-->
-        <div id="board-game"></div>
-        <!-- end The board -->
-
-        <!--Start of zombie box area-->
-        <div class="player-box" id="palyer-2">
-          <div class="palyer">
-            <h2 class="name-2"></h2>
-            <div class="player-img">
-              <img src="images/zombie3.png" id="zombie-img" alt="zombie" />
-            </div>
-          </div>
-          <div class="weapon">
-            <h2>Health: <span id="life-2"></span></h2>
-            <div class="weps-2"></div>
-            <h3>Weapons: <span class="weapons-2"></span></h3>
-            <div class="turn-2"></div>
-            <div class="buttons">
-              <button class="btn-attack-2">Attack</button>
-              <button class="btn-defend-2">Defend</button>
-            </div>
-          </div>
-        </div>
-        <!--End of zombie box area-->
-      </div>
-    </div>
-    <!--Game components container-->
-
-    <!--Add JS file and  jQuery library-->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+      <!--End of Landding page Intro to game rules-->
   </body>
 </html>
