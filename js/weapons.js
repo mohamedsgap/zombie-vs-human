@@ -26,3 +26,12 @@ function replaceWeaponOnMap(value, weapon, num) {
     playerActive.weapon = weapon;    
     playerNotActive.power = value;        
 }
+
+
+// replace the information on the player's board:
+function replaceWeaponOnBoard(power){
+    whoIsActive();
+    $('.weps-' + notActivePlayer).empty();
+    $('<img src="images/weapon-' + currentWeapon +'.png">').appendTo(".weps-" + notActivePlayer);
+    $(".weapons-" + notActivePlayer).text(power);
+}
