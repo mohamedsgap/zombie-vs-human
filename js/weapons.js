@@ -17,3 +17,12 @@ let secondWeapon = new Weapon("secondWeapon", 30, "wp-2 weapon");
 let thirdWeapon = new Weapon("thirdWeapon", 45, "wp-3 weapon");
 let fourthWeapon = new Weapon("fourthWeapon", 60, "wp-4 weapon");
 
+
+// replace the weapon on the map:
+function replaceWeaponOnMap(value, weapon, num) {
+    let tile = $('.box[data-index="' + num + '"]');
+    whoIsActive();
+    tile.removeClass(weapon).addClass(playerActive.weapon);
+    playerActive.weapon = weapon;    
+    playerNotActive.power = value;        
+}
