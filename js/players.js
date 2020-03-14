@@ -307,3 +307,27 @@ function initGame() {
 
 initGame();
 movePlayer();
+
+// to find position x and y on the map 
+function getCoordinates(tile) {
+    return {
+        x: (tile) % 10
+        ,
+        y: Math.floor((tile) / 10)
+    }
+}
+
+// to find the position of the box with player class
+const boxPosition = (itemClass) => {
+    return $(itemClass).data('index');
+};
+
+let playerPosition = boxPosition('.player1');
+
+// old position is the position of not active player in the moment
+let posOld = getCoordinates(playerPosition);
+
+// index of the tile on the map (from 1 to 100);
+function getTileIndex(x, y) {
+    return y * 10 + x;
+}
