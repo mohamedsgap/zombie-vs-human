@@ -110,3 +110,11 @@ function setActiveBoard(notActivePlayer, activePlayer) {
     $('#player-' + activePlayer).addClass('active-board');
 }
 
+
+// display random message on active player's board
+function displayMessageOnBoard(activePlayer) {  
+    let text = turnMessage[Math.floor(Math.random()*turnMessage.length)];
+    $('.turn-' + activePlayer).text(text);
+    $('.turn-' + notActivePlayer).text(noTurnMessage);
+}
+
