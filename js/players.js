@@ -76,3 +76,21 @@ const Player = function(
     "images/path-2.png"
   );
   
+
+// check which player is active:
+function whoIsActive() {
+    if (player1Active) {
+        activePlayer = 2;
+        notActivePlayer = 1;
+        setActivePlayer(player2, player1, powerDiv2);
+        setActiveBoard(notActivePlayer, activePlayer);
+        displayMessageOnBoard(activePlayer);  
+    } else {
+        activePlayer = 1; 
+        notActivePlayer = 2;
+        setActivePlayer(player1, player2, powerDiv1);
+        setActiveBoard(notActivePlayer, activePlayer,);
+        displayMessageOnBoard(activePlayer);
+    }
+
+}
