@@ -31,8 +31,6 @@ function combat() {
     }
 }
 
-
-
 // when the players fight, the board game is hidden
 function fightingArea() {
     mapContainer.hide();
@@ -49,7 +47,6 @@ function fightingArea() {
     defendBtn1.show();
 
 }
-
 
 // display Game Over board at the end, when battle is finished.
 function gameOverBoard() {
@@ -86,3 +83,37 @@ function gameOverBoard() {
     player1.winner(player2);
 }
 
+// attack and defend buttons connected with attack function mentioned in player function constructor
+function fightPlayerOne(){
+    attackBtn1.click(function() {
+        player1.attack(player2);
+        pleyerDefend = 0;
+        turn = 2;
+        activePlayer = 2;
+        combat();
+    });
+    defendBtn1.click(function(){
+        playerDefend = 1;
+        turn = 2;
+        activePlayer = 2;
+        combat();
+        
+    })
+}
+
+function fightPlayerTwo() {
+        attackBtn2.click(function() {
+        player2.attack(player1);
+        pleyerDefend = 0;
+        turn = 1;
+        activePlayer = 1;
+        combat();
+    });
+    defendBtn2.click(function(){       
+        turn = 1;
+        playerDefend = 1;
+        activePlayer = 1;
+        combat();
+        
+    })
+}
