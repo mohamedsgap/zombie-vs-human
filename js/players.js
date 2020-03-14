@@ -94,3 +94,11 @@ function whoIsActive() {
     }
 
 }
+
+
+//set attributes to the acctive player to use them by replacing weapon
+function setActivePlayer(Active, notActive, activePowerDiv) {
+    playerActive = Active;
+    playerNotActive = notActive; 
+    activePlayerPowerDiv = activePowerDiv;      
+}
