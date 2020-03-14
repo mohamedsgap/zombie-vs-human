@@ -10,3 +10,23 @@ function fight(posNew, posOld) {
         fightPlayerTwo();
     }
 }
+
+// show and hide buttons during the fight
+function combat() {
+    if(turn == 0) {
+        attackBtn1.hide();
+        defendBtn1.hide();
+        attackBtn2.hide();
+        defendBtn2.hide();
+    }else if(turn == 1) {
+        attackBtn2.hide();
+        defendBtn2.hide();
+        attackBtn1.show();
+        defendBtn1.show();
+    } else if (turn == 2) {
+        attackBtn1.hide();
+        defendBtn1.hide();
+        attackBtn2.show();
+        defendBtn2.show();       
+    }
+}
