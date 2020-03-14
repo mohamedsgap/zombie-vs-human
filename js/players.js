@@ -102,3 +102,11 @@ function setActivePlayer(Active, notActive, activePowerDiv) {
     playerNotActive = notActive; 
     activePlayerPowerDiv = activePowerDiv;      
 }
+
+
+// add a class for a board of the active player to display current information about game flow
+function setActiveBoard(notActivePlayer, activePlayer) {
+    $('#player-' + notActivePlayer).removeClass('active-board');
+    $('#player-' + activePlayer).addClass('active-board');
+}
+
