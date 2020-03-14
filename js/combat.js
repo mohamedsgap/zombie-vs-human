@@ -30,3 +30,22 @@ function combat() {
         defendBtn2.show();       
     }
 }
+
+
+
+// when the players fight, the board game is hidden
+function fightingArea() {
+    mapContainer.hide();
+    $('#player-1').css('margin-left', '300px');
+    $('#player-2').css('margin-right', '300px');
+    $(body).css({
+        'backgroundImage' : 'url("images/background2.jpg")',
+        'backgroundSize'  : 'no-repeat'
+    })
+    $('div.turn-1').empty();
+    $('div.turn-2').empty();
+    $('#player-' + activePlayer).removeClass('active-board');
+    attackBtn1.show();
+    defendBtn1.show();
+
+}
