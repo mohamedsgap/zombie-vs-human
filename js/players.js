@@ -287,3 +287,23 @@ function movePlayer() {
         }
     });
 }
+
+//initialize the Game
+function initGame() {
+    game.create();
+    for (let i = 0; i < obstacles; i += 1) {
+        game.obstacles('obstacle');
+    }
+    firstWeapon.add();
+    secondWeapon.add();
+    thirdWeapon.add();
+    fourthWeapon.add();
+    player1.add();
+    player2.add();
+    player1.setData();
+    player2.setData();
+    $('.player1').addClass('active');
+}
+
+initGame();
+movePlayer();
