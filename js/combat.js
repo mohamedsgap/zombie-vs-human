@@ -49,3 +49,40 @@ function fightingArea() {
     defendBtn1.show();
 
 }
+
+
+// display Game Over board at the end, when battle is finished.
+function gameOverBoard() {
+    $('.player-box').hide();
+    //$('header').hide();
+    $('#gameOver').css({
+        'display': 'flex',
+        'justifyContent': 'center',
+        'color': '#ffffff',
+        'marginTop': '200px',
+        'textAlign': 'center',
+        'fontSize': '45px',
+    });
+    $('.gameOver-content').css({
+        'border': 'solid 2px grey',
+        'borderRadius': '10px',
+        'backgroundColor': '#000000',
+        'opacity': '75%',
+        'padding': '10px'
+
+    });
+    $('#start-again').css({
+        'width': '150px',
+        'height': '50px',
+        'backgroundColor': 'white',
+        'color': 'black',
+        'boxShadow': 'darkgray',
+        'textAlign': 'center',
+        'fontSize': '20px',
+    });
+    $('#winner').css({'color': 'yellow',});
+
+    gameOverContainer.show();
+    player1.winner(player2);
+}
+
