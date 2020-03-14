@@ -55,4 +55,24 @@ const Player = function(
     }  
   };
   
- 
+  // create human palyer 
+  let player1 = new Player(
+    "Human",
+    100,
+    "player1",
+    1,
+    "wp-1",
+    15,
+    "images/path-1.jpg"
+  );
+  // create zombie palyer 
+  let player2 = new Player(
+    "Zombie",
+    100,
+    "player2",
+    2,
+    "wp-1",
+    15,
+    "images/path-2.png"
+  );
+  
